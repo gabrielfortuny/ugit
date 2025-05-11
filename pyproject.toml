@@ -3,19 +3,17 @@ name = "ugit"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Gabriel Fortuny",email = "92552031+gabrielfortuny@users.noreply.github.com"}
+    { name = "Gabriel Fortuny", email = "92552031+gabrielfortuny@users.noreply.github.com" },
 ]
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [
-]
+dependencies = []
 
 [project.scripts]
 ugit = "ugit.cli:main"
 
 [tool.poetry]
-packages = [{include = "ugit", from = "src"}]
-
+packages = [{ include = "ugit", from = "src" }]
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.11.9"
