@@ -10,9 +10,18 @@ requires-python = ">=3.13"
 dependencies = [
 ]
 
+[project.scripts]
+ugit = "ugit.cli:main"
+
 [tool.poetry]
 packages = [{include = "ugit", from = "src"}]
 
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.9"
+black = "^25.1.0"
+mypy = "^1.15.0"
+isort = "^6.0.1"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
