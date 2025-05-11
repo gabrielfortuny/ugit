@@ -10,7 +10,7 @@ requires-python = ">=3.13"
 dependencies = ["click (>=8.2.0,<9.0.0)"]
 
 [project.scripts]
-ugit = "ugit.cli:main"
+ugit = "ugit.cli:cli"
 
 [tool.poetry]
 packages = [{ include = "ugit", from = "src" }]
