@@ -1,6 +1,7 @@
 """Command-line interface for ugit."""
 
 import click
+
 from . import data
 
 
