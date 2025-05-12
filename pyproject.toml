@@ -19,8 +19,18 @@ packages = [{ include = "ugit", from = "src" }]
 ruff = "^0.11.9"
 black = "^25.1.0"
 mypy = "^1.15.0"
-isort = "^6.0.1"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+src = ["src"]
+select = ["E", "F", "I", "B"] # pycodestyle, pyflakes, isort, bugbear
+ignore = ["E501"]             # Ignore line length (Black handles this)
+
+[tool.mypy]
+strict = true
+exclude = 'tests/|build/'
+mypy_path = "src"
