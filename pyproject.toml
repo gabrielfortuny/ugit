@@ -27,8 +27,8 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.ruff]
 src = ["src"]
-select = ["E", "F", "I", "B"] # pycodestyle, pyflakes, isort, bugbear
-ignore = ["E501"]             # Ignore line length (Black handles this)
+lint.select = ["E", "F", "I", "B"] # pycodestyle, pyflakes, isort, bugbear
+lint.ignore = ["E501"]             # Ignore line length (Black handles this)
 
 [tool.mypy]
 strict = true
